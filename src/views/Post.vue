@@ -2,7 +2,7 @@
 import { defineComponent } from "vue";
 export default defineComponent({
     async setup() {
-        const blogs = await fetch("https://opticalraze.com/blog/blogs.json").then(res => res.json());
+        const blogs = await fetch("/blogs.json").then(res => res.json());
         return {
             blogs
         };
