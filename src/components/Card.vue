@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-    <router-link :to="{ name: 'Post', params: { id: slug }}" class="bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 rounded-xl">
+    <router-link :to="{ name: 'Post', params: { id: slug }}" class="bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 rounded-xl hover:scale-105 transition-all duration-300">
         <img :src="image" alt="" class="rounded-t-xl">
         <div class="p-4">
             <h3 class="text-2xl font-black">{{ title }}</h3>
