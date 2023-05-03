@@ -1,6 +1,12 @@
-<script>
+<script setup>
 import { defineComponent } from "vue";
 import Card from "../components/Card.vue";
+
+defineProps({
+    blogs: Object
+})
+
+/*
 export default defineComponent({
     async setup() {
         const blogs = await fetch("/blogs.json").then(res => res.json());
@@ -10,6 +16,7 @@ export default defineComponent({
     },
     components: { Card }
 })
+*/
 </script>
 
 <template>
